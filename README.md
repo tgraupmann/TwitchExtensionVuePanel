@@ -46,7 +46,7 @@ To get started:
 npm run build
 ```
 
-* For packaging to Twitch rename `index.html` to `panel.html` and update the body.
+* For packaging to Twitch copy the output from `hello-vue/index.html` to `hello-vue/dist/panel.html` and update the body.
 
 ```
 <body>
@@ -55,3 +55,5 @@ npm run build
   <script src="build.js"></script>
 </body>
 ```
+
+* You can now zip the contents of the `hello-vue/dist` output folder and upload to the Twitch admin console to update your Twitch extension.
