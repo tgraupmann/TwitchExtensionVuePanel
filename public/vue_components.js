@@ -1,7 +1,3 @@
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 // item: panel
 Vue.component(
     'thing-item', {
