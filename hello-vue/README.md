@@ -17,7 +17,7 @@ npm run build
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-* For packing to Twitch rename `index.html` to `panel.html` and update the body.
+* For packaging to Twitch rename `index.html` to `panel.html` and update the body.
 
 ```
 <body>

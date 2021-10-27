@@ -2,6 +2,8 @@
 
 In order for Vue to work on Twitch we need to use the Vue runtime. That means the components will need to be compiled before uploading.
 
+![image_1](images/image_1.png)
+
 * Check out the [Webpack and vue-cli tutorial](https://laracasts.com/series/learn-vue-2-step-by-step/episodes/16)
 
 # Setup
@@ -42,4 +44,14 @@ To get started:
 
 ```
 npm run build
+```
+
+* For packaging to Twitch rename `index.html` to `panel.html` and update the body.
+
+```
+<body>
+  <div id="app" class="full-height"></div>
+  <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+  <script src="build.js"></script>
+</body>
 ```
