@@ -37,17 +37,33 @@ Vue.component(
 // section: panel
 Vue.component(
     'panel-section', {
+    props: ['things'],
+    methods: {
+    },
+    template: `
+    <div>
+      <thing-list :things="things"></thing-list>
+    </div>
+    `,
+    data() {
+        return {};
+    }
+});
+
+// app: panel
+Vue.component(
+    'panel-app', {
     props: [],
     methods: {
     },
     template: `
     <div>
-      <thing-list :things="$root._data.things">
-      </thing-list>
+      <panel-section :things="things">
+      </panel-section>
     </div>
     `,
     data() {
-        return {};
+        return this.$root._data;
     }
 });
 
