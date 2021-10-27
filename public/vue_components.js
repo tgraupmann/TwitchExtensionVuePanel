@@ -8,28 +8,29 @@ Vue.component(
     <div class="item-thing">
       <span class="item-thing-name">Name: {{name}}</span>
       <span class="item-thing-type">Type: {{type}}</span>
-    </span>
+    </div>
     `,
     data() {
-        return this.$root;
+        return {};
     }
 });
 // list: thing
 Vue.component(
     'thing-list', {
-    props: ['children'],
+    props: ['things'],
     methods: {
     },
     template: `
     <div>
-      <thing-item v-for="item in children"
+      <thing-item v-for="(item, index) in things"
+        :key="index"
         :name="item.name"
         :type="item.type">
       </thing-item>
     </div>
     `,
     data() {
-        return this.$root;
+        return {};
     }
 });
 
@@ -41,12 +42,12 @@ Vue.component(
     },
     template: `
     <div>
-      <thing-list :children="$root._data.things">
+      <thing-list :things="$root._data.things">
       </thing-list>
     </div>
     `,
     data() {
-        return this.$root;
+        return {};
     }
 });
 
