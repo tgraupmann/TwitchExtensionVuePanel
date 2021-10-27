@@ -63,7 +63,7 @@ Vue.component(
     </div>
     `,
     data() {
-        return this.$root._data;
+        return this.$root;
     }
 });
 
