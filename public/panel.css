@@ -1,0 +1,13 @@
+.item-thing {
+  background-color: #444;
+  padding: 20px;
+}
+
+.item-thing-name {
+  font-weight: bold;
+  color: white;
+}
+
+.item-thing-type {
+  color: cyan;
+}
