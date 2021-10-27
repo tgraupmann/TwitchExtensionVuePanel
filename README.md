@@ -37,3 +37,9 @@ To get started:
 ```
 
 * Migrate the [public](public) Vue files over to [hello-vue/src/components/App.vue](hello-vue/src/components/App.vue) and [hello-vue/src/components](hello-vue/src/components).
+
+* Create the production build
+
+```
+npm run build
+```
