@@ -38,7 +38,7 @@ To get started:
   npm run dev
 ```
 
-* Migrate the [public](public) Vue files over to [hello-vue/src/components/App.vue](hello-vue/src/components/App.vue) and [hello-vue/src/components](hello-vue/src/components).
+* Migrate the [public](public) Vue files over to [hello-vue/src/App.vue](hello-vue/src/App.vue) and [hello-vue/src/components](hello-vue/src/components).
 
 * Create the production build
 
